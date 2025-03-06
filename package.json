@@ -7,13 +7,13 @@
   "scripts": {
     "start": "node ./server.js",
     "dev": "nodemon ./server.js",
-    "dataUsers":"node ./models/data/usersData.js",
-    "dataCars":"node ./models/data/carsData.js",
-    "dataAnime":"node ./models/data/animesData.js",
-    "dataVideogame":"node ./models/data/videogamesData.js",
-    "dataSuperhero":"node ./models/data/superheroesData.js",
-    "dataSpaceMission":"node ./models/data/spaceMissionsData.js",
-    "dataScientist":"node ./models/data/scientistsData.js"
+    "dataUsers": "node ./models/data/usersData.js",
+    "dataCars": "node ./models/data/carsData.js",
+    "dataAnime": "node ./models/data/animesData.js",
+    "dataVideogame": "node ./models/data/videogamesData.js",
+    "dataSuperhero": "node ./models/data/superheroesData.js",
+    "dataSpaceMission": "node ./models/data/spaceMissionsData.js",
+    "dataScientist": "node ./models/data/scientistsData.js"
   },
   "repository": {
     "type": "git",
@@ -27,9 +27,13 @@
   },
   "homepage": "https://github.com/Riccamach29/backRappi#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mongoose": "^8.12.1"
+    "install": "^0.13.0",
+    "mongoose": "^8.12.1",
+    "morgan": "^1.10.0",
+    "npm": "^11.2.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
