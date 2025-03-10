@@ -1,8 +1,8 @@
-import User from '../../models/User.js';
+import SuperHero from '../../models/Superhero.js';
 
-let allUser = async(req,res,next)=>{
+let allSuperHero = async(req,res,next)=>{
     try {
-        let all = await User.find()
+        let all = await SuperHero.find()
         return res.status(200).json({
             response: all
         })
@@ -13,4 +13,4 @@ let allUser = async(req,res,next)=>{
     }
 }
 
-export default allUser;
+export default allSuperHero;

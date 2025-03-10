@@ -1,8 +1,8 @@
-import User from '../../models/User.js';
+import SpaceMission from '../../models/SpaceMission.js';
 
-let allUser = async(req,res,next)=>{
+let allSpaceMission = async(req,res,next)=>{
     try {
-        let all = await User.find()
+        let all = await SpaceMission.find()
         return res.status(200).json({
             response: all
         })
@@ -13,4 +13,4 @@ let allUser = async(req,res,next)=>{
     }
 }
 
-export default allUser;
+export default allSpaceMission;

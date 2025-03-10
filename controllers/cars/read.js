@@ -1,8 +1,8 @@
-import User from '../../models/User.js';
+import Car from '../../models/Car.js';
 
-let allUser = async(req,res,next)=>{
+let allCar = async(req,res,next)=>{
     try {
-        let all = await User.find()
+        let all = await Car.find()
         return res.status(200).json({
             response: all
         })
@@ -13,4 +13,4 @@ let allUser = async(req,res,next)=>{
     }
 }
 
-export default allUser;
+export default allCar;
